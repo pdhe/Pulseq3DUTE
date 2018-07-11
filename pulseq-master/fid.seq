@@ -1,0 +1,50 @@
+# Pulseq sequence file
+# Created by MATLAB mr toolbox
+
+[VERSION]
+major 1
+minor 1
+revision 0
+
+# Format of blocks:
+#  #  D RF  GX  GY  GZ ADC
+[BLOCKS]
+1  0  1   0   0   0  0
+2  1  0   0   0   0  0
+3  0  0   0   0   0  1
+4  2  0   0   0   0  0
+
+# Format of RF events:
+# id amplitude mag_id phase_id freq phase
+# ..        Hz   ....     ....   Hz   rad
+[RF]
+1           25 1 2 0 0
+
+# Format of ADC events:
+# id num dwell delay freq phase
+# ..  ..    ns    us   Hz   rad
+[ADC]
+ 1 256  12500   0 0 0
+
+# Format of delays:
+# id delay (us)
+[DELAYS]
+1 20000
+2 100000
+
+# Sequence Shapes
+[SHAPES]
+
+shape_id 1
+num_samples 10000
+1
+0
+0
+9997
+
+shape_id 2
+num_samples 10000
+0
+0
+9998
+
